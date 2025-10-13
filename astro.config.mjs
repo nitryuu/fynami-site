@@ -46,6 +46,9 @@ function rehypeExternalLinks() {
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://nitryuu.github.io",
+  base: "/petvibe-site",
+  
   vite: {
     plugins: [tailwindcss()],
   },
