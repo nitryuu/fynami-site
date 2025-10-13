@@ -1,0 +1,17 @@
+---
+import Features from "@components/features";
+import Hero from "@components/hero.astro";
+import Privacy from "@components/privacy.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Pet Care App - PetVibe"
+  description="PetVibe helps you stay organized with feeding schedules, weight tracking, and care reminders while keeping your data safe and local"
+>
+  <main>
+    <Hero />
+    <Features client:idle />
+    <Privacy />
+  </main>
+</Layout>

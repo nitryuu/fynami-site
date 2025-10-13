@@ -1,0 +1,19 @@
+---
+import { Content, frontmatter } from "@content/privacy-policy.md";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="PetVibe Privacy Policy" description="PetVibe Privacy Policy">
+  <main>
+    <div class="mx-auto mb-20 max-w-lg text-center">
+      <h1 class="mb-2 text-5xl font-black tracking-tight">
+        {frontmatter.title}
+      </h1>
+      <p class="leading-tight">{frontmatter.snippet}</p>
+    </div>
+
+    <article class="prose prose-lg prose-invert mx-auto mb-20 px-4">
+      <Content />
+    </article>
+  </main>
+</Layout>

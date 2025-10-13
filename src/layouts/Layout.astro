@@ -1,0 +1,25 @@
+---
+import "../styles/global.css";
+import Footer from "@components/partials/footer";
+import Header from "@components/partials/header.astro";
+import Navbar from "@components/partials/navbar.astro";
+
+const { title, description, robots } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="robots" content={robots ?? "all"} />
+    <Header {title} {description} />
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+    <Footer client:idle />
+  </body>
+</html>

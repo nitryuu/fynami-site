@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+import PetVibeLogo from "@assets/petvibe.png";
+---
+
+<aside class="container mx-auto mb-20 flex items-center justify-between p-4">
+  <a href="/">
+    <Image src={PetVibeLogo} alt="PetVibe" class="object-contain" />
+  </a>
+  <nav class="flex items-center gap-x-4">
+    <a
+      title="Privacy Policy"
+      href="/privacy-policy"
+      class="inline-flex drop-shadow drop-shadow-white/20 transition-all hover:drop-shadow-white/60"
+    >
+      <span class="iconify material-symbols-light--privacy-tip-outline size-9"
+      ></span>
+    </a>
+    <a
+      title="Contact"
+      href="mailto:petvibe.team@gmail.com"
+      target="_blank"
+      class="inline-flex drop-shadow drop-shadow-white/20 transition-all hover:drop-shadow-white/60"
+    >
+      <span class="iconify material-symbols-light--mail-outline size-9"></span>
+    </a>
+  </nav>
+</aside>

@@ -1,0 +1,29 @@
+{
+  "name": "petvibe-site",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "biome lint --write",
+    "check": "biome check --write --unsafe"
+  },
+  "dependencies": {
+    "@astrojs/solid-js": "^5.1.1",
+    "@tailwindcss/vite": "^4.1.14",
+    "astro": "^5.14.4",
+    "solid-js": "^1.9.9",
+    "tailwindcss": "^4.1.14"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.5",
+    "@iconify-json/material-symbols-light": "^1.2.41",
+    "@iconify/tailwind4": "^1.0.6",
+    "@tailwindcss/typography": "^0.5.19",
+    "prettier": "3.6.2",
+    "prettier-plugin-astro": "0.14.1",
+    "prettier-plugin-tailwindcss": "^0.6.14"
+  }
+}
