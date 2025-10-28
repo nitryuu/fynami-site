@@ -96,4 +96,4 @@ If there are significant changes, we will notify users via an in-app notice or a
 
 ## 9. Contact
 If you have questions about this Privacy Policy or Fynami’s data practices, you can contact:  
-📧 **fynami.team@gmail.com**
+📧 **fynami.app@gmail.com**
